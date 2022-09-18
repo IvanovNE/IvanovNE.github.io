@@ -42,9 +42,9 @@
     <body id="body" data-spy="scroll" data-target=".header">
 
         <!--========== HEADER ==========-->
-        <header class="header navbar-fixed-top">
+        <header class="header navbar-fixed-top" >
             <!-- Navbar -->
-            <nav class="navbar" role="navigation">
+            <nav class="navbar" role="navigation" style="background: linear-gradient(160deg, grey, transparent);">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="menu-container js_nav-item">
@@ -52,18 +52,27 @@
                             <span class="sr-only">Toggle navigation</span>
                             <span class="toggle-icon"></span>
                         </button>
+                        <!-- Logo -->
+                        <div class="logo"> 
+                            <a class="logo-wrap" href="#body" style="width:300px">
+                            <label style="font-size:30px; background: -webkit-linear-gradient(white, white); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight:bold">Русский язык</label>
+                               <!--  <img class="logo-img logo-img-main" src="img/logo1.png" style="width:300px" alt="Asentus Logo">
+                            <img class="logo-img logo-img-active" src="img/logo1.png" style="width:300px" alt="Asentus Logo"> -->
+                            </a>
+                        </div>
+                        <!-- End Logo -->
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products">Products</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#service">Service</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Work</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing">Pricing</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body" style="font-size:18px; color:white">Главная</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products" style="font-size:18px; color:white">Обучение</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#service" style="font-size:18px; color:white">Преимущества</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work" style="font-size:18px; color:white">Подготовка</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing" style="font-size:18px; color:white">Занятия</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact" style="font-size:18px; color:white">Контакты</a></li>
                             </ul>
                         </div>
                     </div>
@@ -78,7 +87,7 @@
         <div class="promo-block">
             <div class="container">
                 <div class="margin-b-40">
-                    <h1 class="promo-block-title">Русский язык.</h1>
+                    <h1 class="promo-block-title">Русский язык</h1>
                     <p class="promo-block-text">Подготовка к ЦТ. Общая подготовка. Русский как иностранный.</p>
                 </div>
                 <a class="js_popup-youtube btn-theme btn-theme-md btn-white-bg text-uppercase" href="https://www.youtube.com/watch?v=0qisGSwZym4" title="Intro Video"><i class="btn-icon icon-control-play"></i> Watch Intro Video</a>
@@ -92,8 +101,8 @@
             <div class="container content-lg">
                 <div class="row text-center margin-b-40">
                     <div class="col-sm-6 col-sm-offset-3">
-                        <h2>Latest Products</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
+                        <h2>Обучение</h2>
+                        <p>Обучение основано на индивидуальном подходе к каждому ученику. Выбор тематики занятий и отрабатываемых заданий зависит от начального уровня знаний и достигаемой цели.</p>
                     </div>
                 </div>
                 <!--// end row -->
@@ -104,9 +113,8 @@
                         <div class="margin-b-20">
                             <img class="img-responsive wow fadeIn" src="img/970x647/01.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".1s">
                         </div>
-                        <h4><a href="#">Workspace</a> <span class="text-uppercase margin-l-20">Management</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
+                        <h4><a >Анализ</a> <span class="text-uppercase margin-l-20">Начало занятий</span></h4>
+                        <p style="text-align:justify">На первых занятиях происходит знакомство с обучающимся, проверка владения отдельными темами и анализ его начального уровня знаний. Исходя из уровня знаний, поставленных целей и пожеланий учащегося, разрабатывается индивидуальная программа обучения.</p>
                     </div>
                     <!-- End Latest Products -->
 
@@ -115,9 +123,8 @@
                         <div class="margin-b-20">
                             <img class="img-responsive wow fadeIn" src="img/970x647/02.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s">
                         </div>
-                        <h4><a href="#">Minimalism</a> <span class="text-uppercase margin-l-20">Developmeny</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
+                        <h4><a>Обучение</a> <span class="text-uppercase margin-l-20">Основная часть</span></h4>
+                        <p style="text-align:justify">В ходе основной части обучение проходит по разработанной индивидуальной программе с учетом показателей учащегося по каждой теме. Результатом основной части обучения является усвоение большей части материала и порядка решения всех видов заданий.</p>
                     </div>
                     <!-- End Latest Products -->
 
@@ -126,26 +133,23 @@
                         <div class="margin-b-20">
                             <img class="img-responsive wow fadeIn" src="img/970x647/03.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".3s">
                         </div>
-                        <h4><a href="#">Cleant Style</a> <span class="text-uppercase margin-l-20">Design</span></h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                        <a class="link" href="#">Read More</a>
+                        <h4><a>Закрепление</a> <span class="text-uppercase margin-l-20">Заключительный этап</span></h4>
+                        <p style="text-align:justify">Заключительная часть состоит по большей части из выполнения практических заданий, что способствует развитию навыка применения изученного материала в нужной ситуации и повышает уверенность при решении нестандартных задач.</p>
                     </div>
                     <!-- End Latest Products -->
                 </div>
                 <!--// end row -->
             </div>
 
-            <div class="container-full-width">
-                <div class="row row-space-2">
-                    <div class="col-sm-6 sm-margin-b-4">
-                        <img class="img-responsive" src="img/970x647/01.jpg" alt="Image">
-                    </div>
-                    <div class="col-sm-6">
-                        <img class="img-responsive" src="img/970x647/03.jpg" alt="Image">
-                    </div>
-                </div>
-                <!--// end row -->
+             <!-- Promo Banner -->
+        <div class="promo-banner">
+            <div class="container-sm content-lg">
+                <h2 class="promo-banner-title" style="font-size:40px">Язык есть вековой труд целого поколения.</h2>
+                <p class="promo-banner-text" style="text-align:right; font-size: 30px">В. И. Даль</p>
             </div>
+        </div>
+        <!-- End Promo Banner -->
+        
         </div>
         <!-- End Products -->
 
@@ -237,11 +241,11 @@
         </div>
         <!-- End Service -->
 
-        <!-- Promo Banner -->
+         <!-- Promo Banner -->
         <div class="promo-banner">
             <div class="container-sm content-lg">
-                <h2 class="promo-banner-title">Displaying the Result</h2>
-                <p class="promo-banner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                <h2 class="promo-banner-title" style="font-size:40px">С русским языком можно творить чудеса.</h2>
+                <p class="promo-banner-text" style="text-align:right; font-size: 30px">К. Г. Паустовский</p>
             </div>
         </div>
         <!-- End Promo Banner -->
@@ -262,7 +266,7 @@
                                 <div class="work-popup-content">
                                     <a href="javascript:void(0);" class="work-popup-close">Hide</a>
                                     <div class="margin-b-30">
-                                        <h3 class="margin-b-5">Art Of Coding</h3>
+                                        <h3 class="margin-b-5">Знакомство</h3>
                                         <span>Clean &amp; Minimalistic Design</span>
                                     </div>
                                     <div class="row">
@@ -633,7 +637,7 @@
         <!--========== END FOOTER ==========-->
 
         <!-- Back To Top -->
-        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top" style="width:100px; color:black"><img src="img/up.png" style="margin-right:6px; margin-bottom:3px" />В начало</a>
 
         <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
         <!-- CORE PLUGINS -->
