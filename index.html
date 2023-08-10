@@ -1,461 +1,124 @@
 <!DOCTYPE html>
-<!-- ==============================
-    Project:        Metronic "Aironepage" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-    Version:        1.0
-    Author:         KeenThemes
-    Primary use:    Corporate, Business Themes.
-    Email:          support@keenthemes.com
-    Follow:         http://www.twitter.com/keenthemes
-    Like:           http://www.facebook.com/keenthemes
-    Website:        http://www.keenthemes.com
-    Premium:        Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-================================== -->
-<html lang="en" class="no-js">
-    <!-- BEGIN HEAD -->
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Metronic "Aironepage" Frontend Freebie</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="" name="description"/>
-        <meta content="" name="author"/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Никита Иванов</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f4f4f4, #e0e0e0);
+            margin: 0;
+            padding: 0;
+        }
 
-        <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-        <!-- PAGE LEVEL PLUGIN STYLES -->
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
+        h1, h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
 
-        <!-- THEME STYLES -->
-        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+        p {
+            color: #555555;
+        }
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico"/>
-    </head>
-    <!-- END HEAD -->
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
 
-    <!-- BODY -->
-    <body id="body" data-spy="scroll" data-target=".header">
+        .contact-info p {
+            margin: 5px 0;
+        }
 
-        <!--========== HEADER ==========-->
-        <header class="header navbar-fixed-top" >
-            <!-- Navbar -->
-            <nav class="navbar" role="navigation" style="background: linear-gradient(160deg, grey, transparent);">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="menu-container js_nav-item">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
-                        <!-- Logo -->
-                        <div class="logo"> 
-                            <a class="logo-wrap" href="#body" style="width:300px">
-                            <label style="font-size:30px; background: -webkit-linear-gradient(white, white); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight:bold">Русский язык</label>
-                               <!--  <img class="logo-img logo-img-main" src="img/logo1.png" style="width:300px" alt="Asentus Logo">
-                            <img class="logo-img logo-img-active" src="img/logo1.png" style="width:300px" alt="Asentus Logo"> -->
-                            </a>
-                        </div>
-                        <!-- End Logo -->
-                    </div>
+        .experience ul, .education ul, .skills ul {
+            margin-left: 30px;
+        }
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
-                        <div class="menu-container">
-                            <ul class="nav navbar-nav navbar-nav-right">
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body" style="font-size:18px; color:white">Главная</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products" style="font-size:18px; color:white">Обучение</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#service" style="font-size:18px; color:white">Преимущества</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#pricing" style="font-size:18px; color:white">Занятия</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact" style="font-size:18px; color:white">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Navbar Collapse -->
-                </div>
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!--========== END HEADER ==========-->
-
-        <!--========== SLIDER ==========-->
-        <div class="promo-block">
-            <div class="container">
-                <div class="margin-b-40">
-                    <h1 class="promo-block-title">Русский язык</h1>
-                    <p class="promo-block-text">Подготовка к ЦТ. Общая подготовка. Русский как иностранный.</p>
-                </div>
-                <a class="js_popup-youtube btn-theme btn-theme-md btn-white-bg text-uppercase" href="https://www.youtube.com/watch?v=0qisGSwZym4" title="Intro Video"><i class="btn-icon icon-control-play"></i> Watch Intro Video</a>
-            </div>
-        </div>
-        <!--========== SLIDER ==========-->
-
-        <!--========== PAGE LAYOUT ==========-->
-        <!-- Products -->
-        <div id="products" style="background:#e1e1e1">
-            <div class="container content-lg" >
-                <div class="row text-center margin-b-40">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <h2>Обучение</h2>
-                        <p>Обучение основано на индивидуальном подходе к каждому ученику. Выбор тематики занятий и отрабатываемых заданий зависит от начального уровня знаний и достигаемой цели.</p>
-                    </div>
-                </div>
-                <!--// end row -->
-
-                <div class="row">
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <img class="img-responsive wow fadeIn" src="img/analysis.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".1s" style="margin-left:35px">
-                        </div>
-                        <h4><a >Анализ</a> <span class="text-uppercase margin-l-20">Начало занятий</span></h4>
-                        <p style="text-align:justify">На первых занятиях происходит знакомство с обучающимся, проверка владения отдельными темами и анализ его начального уровня знаний. Исходя из уровня знаний, поставленных целей и пожеланий учащегося, разрабатывается индивидуальная программа обучения.</p>
-                    </div>
-                    <!-- End Latest Products -->
-
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <img class="img-responsive wow fadeIn" src="img/learning.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".2s">
-                        </div>
-                        <h4><a>Обучение</a> <span class="text-uppercase margin-l-20">Основная часть</span></h4>
-                        <p style="text-align:justify">В ходе основной части обучение проходит по разработанной индивидуальной программе с учетом показателей учащегося по каждой теме. Результатом основной части обучения является усвоение большей части материала и порядка решения всех видов заданий.</p>
-                    </div>
-                    <!-- End Latest Products -->
-
-                    <!-- Latest Products -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <img class="img-responsive wow fadeIn" src="img/result.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".3s" style="margin-left:35px">
-                        </div>
-                        <h4><a>Закрепление</a> <span class="text-uppercase margin-l-20">Заключительный этап</span></h4>
-                        <p style="text-align:justify">Заключительная часть состоит по большей части из выполнения практических заданий, что способствует развитию навыка применения изученного материала в нужной ситуации и повышает уверенность при решении нестандартных задач.</p>
-                    </div>
-                    <!-- End Latest Products -->
-                </div>
-                <!--// end row -->
-            </div>
-
-             <!-- Promo Banner -->
-        <div class="promo-banner">
-            <div class="container-sm content-lg">
-                <h2 class="promo-banner-title" style="font-size:40px">Язык есть вековой труд целого поколения.</h2>
-                <p class="promo-banner-text" style="text-align:right; font-size: 30px">В. И. Даль</p>
-            </div>
-        </div>
-        <!-- End Promo Banner -->
+        .desired-conditions p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Никита Иванов</h1>
+        <p>Fullstack разработчик, 2 года опыта</p>
         
+        <div class="contact-info">
+            <h2>Контактная информация</h2>
+            <p>Беларусь, Минск</p>
+            <p>Telegram: @ivanovn3</p>
+            <p>Email: ivanovn347@gmail.com</p>
         </div>
-        <!-- End Products -->
-
-        <!-- Service -->
-        <div id="service">
-            <div class="bg-color-sky-light" data-auto-height="true">
-                <div class="content-lg container">
-                <h2 style="text-align:center">Преимущества</h2>
-                    <div class="row row-space-2 margin-b-4">
-                        <div class="col-sm-4 sm-margin-b-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-note"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Знакомство</h3>
-                                    <p class="margin-b-5">Первое занятие является ознакомительным, поэтому проводится бесплатно.</p>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-clock"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Время</h3>
-                                    <p class="margin-b-5">Занятие может проводиться от 45 минут до 2-х часов по договоренности.</p>
-                                </div> 
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-screen-desktop"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Дистанционные занятия</h3>
-                                    <p class="margin-b-5">Есть возможность проведения дистанционных занятий.</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
-
-                    <div class="row row-space-2">
-                        <div class="col-sm-4 sm-margin-b-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-docs"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Материалы</h3>
-                                    <p class="margin-b-5">Обучение происходит на основе актуальных и подготовленных материалов.</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-graduation"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Гарантия</h3>
-                                    <p class="margin-b-5">Гарантия достижения учащимся высоких результатов и реализации  целей.</p>
-                                </div>
-                               
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-refresh"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Закрепление</h3>
-                                    <p class="margin-b-5">Возможность повторной проработки изученного материала с целью закрепления результата.</p>
-                                </div>
-                               
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-        </div>
-        <!-- End Service -->
-
-         <!-- Promo Banner -->
-        <div class="promo-banner">
-            <div class="container-sm content-lg">
-                <h2 class="promo-banner-title" style="font-size:40px">С русским языком можно творить чудеса.</h2>
-                <p class="promo-banner-text" style="text-align:right; font-size: 30px">К. Г. Паустовский</p>
-            </div>
-        </div>
-        <!-- End Promo Banner -->
         
-        <!-- Pricing -->
-        <div id="pricing">
-            <div class="bg-color-sky-light">
-                <div class="content-lg container">
-                <h2 style="text-align:center">Виды занятий</h2>
-                    <div class="row row-space-2">
-                        <div class="col-sm-4 sm-margin-b-4">
-                            <!-- Pricing -->
-                            <div class="pricing">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-graduation"></i>
-                                    <h3>Подготовка к ЦТ</h3>
-                                    <p>Для учащихся 10-х и 11-х классов</p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Изучение только необходимого материала.</li>
-                                    <li class="pricing-list-item">Разбор ЦТ прошлых лет и РТ.</li>
-                                    <li class="pricing-list-item">Решение тестов и практическая подготовка.</li>
-                                </ul>
-                                
-                            </div>
-                            <!-- End Pricing -->
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-4">
-                            <!-- Pricing -->
-                            <div class="pricing pricing-active">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-badge"></i>
-                                    <h3>Общая подготовка</h3>
-                                    <p>Подходит для учащихся 1-9 классов</p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Повторение пройденного материала.</li>
-                                    <li class="pricing-list-item">Углубленное изучение школьной программы.</li>
-                                    <li class="pricing-list-item">Работа над сочинениями и творческими заданиями.</li>
-                                </ul>
-
-                            </div>
-                            <!-- End Pricing -->
-                        </div>
-                        <div class="col-sm-4">
-                            <!-- Pricing -->
-                            <div class="pricing">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-globe"></i>
-                                    <h3>Русский как иностранный</h3>
-                                    <p>Подходит для тех, кто впервые изучает русский язык</p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Дистанционное обучение.</li>
-                                    <li class="pricing-list-item">Использование передовых методик.</li>
-                                    <li class="pricing-list-item">Работа с подготовленным материалом.</li>
-                                </ul>
-                                
-                            </div>
-                            <!-- End Pricing -->
-                        </div>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-        </div>
-        <!-- End Pricing -->
-
- <!-- Promo Banner -->
-        <div class="promo-banner">
-            <div class="container-sm content-lg">
-                <h2 class="promo-banner-title" style="font-size:40px">Что русский язык — один из богатейших языков в мире, в этом нет никакого сомнения.</h2>
-                <p class="promo-banner-text" style="text-align:right; font-size: 30px">В. Г. Белинский</p>
-            </div>
-        </div>
-        <!-- End Promo Banner -->
-
-        <!-- Testimonials -->
-        <div class="content-md container">
-            <div class="row">
-                <div class="col-sm-9">
-                    <h2>Отзывы учащихся</h2>
-
-                    <!-- Swiper Testimonials -->
-                    <div class="swiper-slider swiper-testimonials">
-                        <!-- Swiper Wrapper -->
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <blockquote class="blockquote">
-                                    <div class="margin-b-20">
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
-                                    </div>
-                                    <div class="margin-b-20">
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
-                                    </div>
-                                    <p><span class="fweight-700 color-link">Joh Milner</span>, Metronic Customer</p>
-                                </blockquote>
-                            </div>
-                            <div class="swiper-slide">
-                                <blockquote class="blockquote">
-                                    <div class="margin-b-20">
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                    <div class="margin-b-20">
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </div>
-                                    <p><span class="fweight-700 color-link">Alex Clarson</span>, Metronic Customer</p>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <!-- End Swiper Wrapper -->
-
-                        <!-- Pagination -->
-                        <div class="swiper-testimonials-pagination"></div>
-                    </div>
-                    <!-- End Swiper Testimonials -->
-                </div>
-            </div>
-            <!--// end row -->
-        </div>
-        <!-- End Testimonials -->
+        <div class="experience">
+            <h2>Опыт работы</h2>
+            <p><strong>Старший инженер разработки информационных систем</strong></p>
+            <p>Гос. организация (Минск) – МАЙ 2022 – Н.В.</p>
+            <ul>
+                <li>Руководство командой по разработке 3 проектов для коммерческого использования.</li>
+                <li>Разработка backend (ASP.NET MVC) на 2 проектах и fullstack (MS SQL Database + ASP.NET Web API
+                    + html/css/js + WPF Web API Client Application) на 1 из них.</li>
+                <li>Развертывание, внедрение и администрирование всех проектов.</li>
+                <li>Обучение 2 инженеров в направлении .NET разработки в ходе реализации проектов.</li>
+            </ul>
             
-        <!-- Contact -->
-        <div id="contact">
-            <!-- Google Map -->
-            <div class="gmap">
-                <div id="map" class="map height-400"></div>
-                <address class="gmap-address">
-                    <p class="color-heading margin-b-0">277 Bedford Avenue, Brooklyn, NY 11211, New York, USA</p>
-                </address>
-            </div>
-            <!-- End Google Map -->
+            <p><strong>Инженер разработки информационных систем</strong></p>
+            <p>Гос. организация (Минск) – ИЮЛЬ 2021 – МАЙ 2022</p>
+            <ul>
+                <li>Fullstack-разработка на 5 проектах (ASP.NET MVC, WPF, Delphi 7).</li>
+                <li>Развертывание, внедрение и администрирование всех проектов.</li>
+                <li>Администрирование баз данных Oracle и MS SQL.</li>
+            </ul>
         </div>
-        <!-- End Contact -->
-        <!--========== END PAGE LAYOUT ==========-->
-
-        <!--========== FOOTER ==========-->
-        <footer class="footer">
-            <!-- Links -->
-            <div class="section-seperator">
-                <div class="content-md container">
-                    <div class="row" >
-                        <div class="col-sm-9 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="#body">Главная</a></li>
-                                <li class="footer-list-item"><a href="#products">Обучение</a></li>
-                                <li class="footer-list-item"><a href="#service">Преимущества</a></li>
-                                <li class="footer-list-item"><a href="#pricing">Занятия</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-3 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="#">Facebook</a></li>
-                                <li class="footer-list-item"><a href="#">Instagram</a></li>
-                                <li class="footer-list-item"><a href="#">YouTube</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                       
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-            <!-- End Links -->
-
-            <!-- Copyright
-            <div class="content container">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <img class="footer-logo" src="img/logo-dark.png" alt="Aironepage Logo">
-                    </div>
-                    <div class="col-xs-6 text-right">
-                        <p class="margin-b-0"><a class="fweight-700" href="http://keenthemes.com/preview/aironepage/">Aironepage</a> Theme Powered by: <a class="fweight-700" href="http://www.keenthemes.com/">KeenThemes.com</a></p>
-                    </div>
-                </div>
-                <!--// end row 
-            </div>
-            <!-- End Copyright -->
-        </footer>
-        <!--========== END FOOTER ==========-->
-
-        <!-- Back To Top -->
-        <a href="javascript:void(0);" class="js-back-to-top back-to-top" style="width:100px; color:black"><img src="img/up.png" style="margin-right:6px; margin-bottom:3px" />В начало</a>
-
-        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-        <!-- CORE PLUGINS -->
-        <script src="vendor/jquery.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-
-        <!-- PAGE LEVEL PLUGINS -->
-        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
-        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
-        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
-        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
-        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
-        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
-        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
-        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U&amp;callback=initMap" async defer></script>
-
-        <!-- PAGE LEVEL SCRIPTS -->
-        <script src="js/layout.min.js" type="text/javascript"></script>
-        <script src="js/components/wow.min.js" type="text/javascript"></script>
-        <script src="js/components/swiper.min.js" type="text/javascript"></script>
-        <script src="js/components/maginific-popup.min.js" type="text/javascript"></script>
-        <script src="js/components/masonry.min.js" type="text/javascript"></script>
-        <script src="js/components/gmap.min.js" type="text/javascript"></script>
-
-    </body>
-    <!-- END BODY -->
+        
+        <div class="education">
+            <h2>Образование</h2>
+            <p><strong>Белорусский государственный университет информатики и радиоэлектроники, Минск</strong></p>
+            <p>2017 – 2021</p>
+            <p>Высшее образование</p>
+            <p>Факультет: Компьютерных систем и сетей</p>
+            <p>Специальность: Вычислительные машины, системы и сети</p>
+            <p>Квалификация: Инженер-системотехник</p>
+        </div>
+        
+        <div class="skills">
+            <h2>Технические навыки</h2>
+            <p><strong>Продвинутый уровень:</strong></p>
+            <ul>
+                <li>C#, HTML/CSS/JavaScript, Xaml, SQL;</li>
+                <li>ASP.NET, WPF, git, MS SQL, Oracle, IIS;</li>
+                <li>Entity Framework, Leaflet.js, Gmap.NET, MVC, MVVM.</li>
+            </ul>
+            <p><strong>Средний уровень:</strong></p>
+            <ul>
+                <li>Typescript, SASS, Python, CҎϮ;</li>
+                <li>MySQL, SQLite, Xamarin;</li>
+                <li>OpenCV, web3.js.</li>
+            </ul>
+        </div>
+        
+        <div class="interests-goals">
+            <h2>Интересы и цели</h2>
+            <p>Развитие в направлении frontend-разработки, изучение Vue.js.</p>
+            <p>Глубокое изучение Blockchain-технологий и AI в программировании.</p>
+        </div>
+        
+        <div class="desired-conditions">
+            <h2>Желаемые условия</h2>
+            <p>Удаленная работа. Рассматриваю любые варианты графика работы.</p>
+            <p>Без оформления, без предоставления персональных данных. Оплата USDT/BTC.</p>
+        </div>
+    </div>
+</body>
 </html>
